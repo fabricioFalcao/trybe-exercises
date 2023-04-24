@@ -1,0 +1,8 @@
+Internet
+Unix
+Bash
+Zsh
+Terminal
+Linux
+Zoom
+Slack

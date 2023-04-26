@@ -1,0 +1,63 @@
+div :hover {
+    border: 5px solid rgb(94, 94, 94);
+}
+
+div:nth-of-type(1) {
+    background-color: rgba(255, 102, 0, 0.767);
+}
+
+div:nth-of-type(2) {
+    background-color: rgb(17, 90, 17);
+}
+
+div:nth-of-type(3) {
+    background-color: rgb(236, 236, 29);
+}
+
+div:nth-of-type(4) {
+    background-color: rgb(173, 14, 139);
+}
+
+div:nth-of-type(5) {
+    background-color: rgb(34, 76, 167);
+}
+
+div:nth-of-type(1) > h3{
+    color: beige;
+    font-size: 1em;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+div:nth-of-type(2) > h3 {
+    color: brown;
+    font-size: 1.2em;
+    font-style: normal;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+div:nth-of-type(3) > h3{
+    color: darkgoldenrod font-size: 1.4em;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+    height: 80px;
+}
+
+div:nth-of-type(4) > h3{
+    color: beige;
+    font-size: 1.6em;
+    font-style: initial;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div:nth-of-type(5) > h3{
+    color: olive;
+    font-size: 1.8em;
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+div:nth-child(even) h3 {
+        font-stretch: extra-expanded;
+        font-variant: small-caps;
+}

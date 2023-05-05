@@ -5,3 +5,18 @@
 // Multiplicação (a * b)
 // Divisão (a / b)
 // Módulo (a % b)
+
+let a = 16;
+let b = 4;
+
+let soma = a + b;
+let subt = a - b;
+let multp = a * b;
+let divi = a / b;
+let modulo = a % b;
+
+console.log(soma);
+console.log(subt);
+console.log(multp);
+console.log(divi);
+console.log(modulo);

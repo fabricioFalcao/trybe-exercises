@@ -39,3 +39,12 @@ if (a > b && a > c) {
 } else {
   console.log(c + " é maior que " + a + " e " + b)
 }
+// 4 - Utilize if/else para escrever um código que, dado um valor recebido como parâmetro, retorne: “positive”, se esse valor for positivo; “negative”, se esse valor for negativo, e “zero”, caso esse valor não seja nem positivo nem negativo.
+
+let parametro = -3;
+
+if (parametro > 0) {
+  console.log(parametro + " é positivo");
+} else if (parametro < 0) {
+  console.log(parametro + " é negativo");
+} else console.log("zero");

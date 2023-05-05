@@ -8,6 +8,7 @@
 
 let a = 16;
 let b = 4;
+let c = 8;
 
 let soma = a + b;
 let subt = a - b;
@@ -21,8 +22,20 @@ console.log(multp);
 console.log(divi);
 console.log(modulo);
 
+// 2 - Utilize if/else para escrever um código que retorne o maior de dois números. Defina, no começo do seu código, duas variáveis com os valores que serão comparados.
+
 if (a > b) {
-console.log(a + " é maior que " + b);
+  console.log(a + " é maior que " + b);
 } else {
   console.log(b + " é maior que " + a);
+}
+
+// 3 - Utilize if/else para escrever um código que retorne o maior de três números. Defina, no começo do seu código, três variáveis com os valores que serão comparados.
+
+if (a > b && a > c) {
+  console.log(a + " é maior que " + b + " e " + c);
+} else if (b > a && b > c) {
+  console.log(b + " é maior que " + a + " e " + c);
+} else {
+  console.log(c + " é maior que " + a + " e " + b)
 }

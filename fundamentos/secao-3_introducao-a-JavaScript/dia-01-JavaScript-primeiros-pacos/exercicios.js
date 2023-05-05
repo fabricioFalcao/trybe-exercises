@@ -20,3 +20,9 @@ console.log(subt);
 console.log(multp);
 console.log(divi);
 console.log(modulo);
+
+if (a > b) {
+console.log(a + " é maior que " + b);
+} else {
+  console.log(b + " é maior que " + a);
+}

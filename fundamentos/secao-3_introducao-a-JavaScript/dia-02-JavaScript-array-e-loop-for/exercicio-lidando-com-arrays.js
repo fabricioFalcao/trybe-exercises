@@ -57,3 +57,14 @@ if (impares.length === 0) {
 } else {
   console.log("Há " + impares.length + " números ímpares")
 }
+
+// Utilizando for, descubra o menor valor contido no array e imprima-o.
+
+let menorValor = numbers[0];
+
+for (let index = 0; index < numbers.length; index += 1) {
+  if (numbers[index] < menorValor) {
+    menorValor = numbers[index]
+  }
+}
+console.log("O menor valor é: " + menorValor)

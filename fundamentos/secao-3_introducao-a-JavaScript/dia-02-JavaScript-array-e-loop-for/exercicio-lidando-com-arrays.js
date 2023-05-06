@@ -31,3 +31,14 @@ if (mediaAritimetica > 20) {
 } else {
   console.log("O valor da média aritmética é menor ou igual a 20");
 }
+
+// Utilizando for, descubra o maior valor contido no array e imprima-o.
+
+let maiorValor = numbers[0];
+
+for (let index = 0; index < numbers.length; index += 1) {
+  if (numbers[index] > maiorValor) {
+    maiorValor = numbers[index]
+  }
+}
+console.log("O maior valor é: " + maiorValor)

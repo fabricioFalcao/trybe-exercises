@@ -38,3 +38,4 @@ for (let keys in info) {
     console.log(info[keys] + ' e ' + info2[keys]);
   }
 };
+console.log(Object.keys(info));

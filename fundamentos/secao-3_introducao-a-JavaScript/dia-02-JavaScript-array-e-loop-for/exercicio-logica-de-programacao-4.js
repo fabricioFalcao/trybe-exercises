@@ -3,7 +3,7 @@
 let maiorPrimo = 0;
 
 let menorNumero = 2;
-let maiorNumero = 50;
+let maiorNumero = 500;
 
 for (let numeroTeste = maiorNumero - 1; numeroTeste >= menorNumero; numeroTeste -= 1) {
   let ePrimo = true;

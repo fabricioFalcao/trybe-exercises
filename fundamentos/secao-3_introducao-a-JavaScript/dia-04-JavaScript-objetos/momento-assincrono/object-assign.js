@@ -1,25 +1,12 @@
-let person = {
-  name: 'Roberto',
+let band = {
+  name: 'Blind Guardian',
+  formedIn: 1986,
+  lastAlbum: 'Beyond the Red Mirror',
 };
 
-let lastName = {
-  lastName: 'Silva',
+let info = {
+  genre: 'Power Metal',
+  lastAlbum: 'Twilight Orchestra: Legacy of the Dark Lands',
 };
 
-let clone = Object.assign({}, person, lastName);
-
-console.log(clone); // { name: 'Roberto', lastName: 'Silva' }
-console.log(person); // { name: 'Roberto', lastName: 'Silva' }
-
-clone.name = 'Maria';
-
-console.log('Mudando a propriedade name através do objeto clone')
-console.log(clone); // Output: { name: 'Maria', lastName: 'Silva' }
-console.log(person); // Output: { name: 'Maria', lastName: 'Silva' }
-console.log('--------------');
-
-person.lastName = 'Ferreira';
-
-console.log('Mudando a propriedade lastName através do objeto person');
-console.log(clone); // Output: { name: 'Maria', lastName: 'Ferreira' }
-console.log(person); // Output: { name: 'Maria', lastName: 'Ferreira' }
+console.log(Object.assign(band, info))

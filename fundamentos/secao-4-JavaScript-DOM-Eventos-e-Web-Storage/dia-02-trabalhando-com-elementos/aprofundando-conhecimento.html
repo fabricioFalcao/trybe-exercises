@@ -101,8 +101,21 @@
     for(let i = 1; i <= 3; i += 1){
       const h3 = document.createElement('h3');
       h3.innerText = i;
+      h3.className = 'description'
       main.appendChild(h3);
     }
+
+    h1.className = 'title';
+
+    main.removeChild(document.querySelector('.left-content'));
+
+    rightSection.style.marginRight = 'auto';
+
+    section.parentElement.style.backgroundColor = 'green';
+
+    lista.lastChild.remove();
+    lista.lastChild.remove();
+
 
     // const ul = document.createElement('ul');
     //   const numbers = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];

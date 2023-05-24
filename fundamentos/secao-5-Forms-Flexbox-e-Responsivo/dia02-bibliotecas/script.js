@@ -1,14 +1,9 @@
-// SELETORES
-const inputText = document.querySelector("#input-text");
-const inputCheckbox = document.querySelector("#input-checkbox");
-const hrefLink = document.querySelector("#href");
+const button = document.getElementById('submit-btn');
+button.addEventListener('click', (ev) => ev.preventDefault());
 
-hrefLink.addEventListener('click', (ev) => {ev.preventDefault()})
-
-inputCheckbox.addEventListener('click', (ev) => {ev.preventDefault()})
-
-inputText.addEventListener('keypress', (event) => {
-   if (event.key !== 'a') {
-    event.preventDefault();
-  }
+const agreement = document.getElementById('agreement');
+let toggle = true;
+agreement.addEventListener('input', () => {
+  toggle = !toggle;
+  button.disabled = toggle;
 });

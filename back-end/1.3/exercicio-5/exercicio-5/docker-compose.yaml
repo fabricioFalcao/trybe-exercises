@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  myapp:
+    build: .
+    ports:
+      - 8080:3000
+    volumes:
+      - .:/my-app

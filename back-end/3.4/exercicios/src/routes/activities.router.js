@@ -8,7 +8,9 @@ const descriptionValidation = require('../middlewares/descriptionValidation');
 const createdAtValidation = require('../middlewares/createdAtValidation');
 const ratingValidation = require('../middlewares/ratingValidation');
 const difficultyValidation = require('../middlewares/difficultyValidation');
+const userAuthenticator = require('../middlewares/userAuthenticator');
 
+router.use(userAuthenticator);
 router.use(nameValidation);
 router.use(priceValidation);
 router.use(descriptionValidation);
@@ -16,7 +18,7 @@ router.use(createdAtValidation);
 router.use(ratingValidation);
 router.use(difficultyValidation);
 
-router.post('/', (req, res) => {
+router.post('/', (_req, res) => {
   res.status(201).json({ message: 'Atividade cadastrada com sucesso!' });
 });
 

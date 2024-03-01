@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2019",
+    "rootDir": "./src",
+    "outDir": "./build",
+    "esModuleInterop": true,
+    "strict": true,
+    "resolveJsonModule": true // Enable JSON module resolution
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.json"
+  ], // Include TypeScript and JSON files
+  "exclude": [
+    "node_modules"
+  ]
+}
